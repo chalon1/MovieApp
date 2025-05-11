@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+.app {
+  min-height: 100vh;
+  color: white;
+  width: 1350px;
+  height: auto;
+  background: #1a1a1a;
+  top: 0;
+  /* position: fixed; */
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #f5c518;
+}
+
+.profile {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  /* background: linear-gradient( #1a1a1a, #0d0d0d); */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-box {
+  display: inline-flex;
+  border: 2px solid #f5c518;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-box input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: #1a1a1a;
+  color: #fff;
+  width: 300px;
+}
+
+.search-box button {
+  background: #f5c518;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* 3 columns, but adjusts to fit available space */
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+  justify-items: center;
+  justify-content: space-around;
+  background-color: #222;
+}
+
+/* Individual movie result styling */
+.result {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px; /* Limit the width of each movie block */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}
+
+.result h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* No results */
+p.no-results {
+  color: #bbb;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
