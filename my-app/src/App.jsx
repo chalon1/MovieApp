@@ -1,7 +1,7 @@
 // App.jsx
 import { useState } from 'react';
 import './App.css';
-import './indesx.html'
+// import './indesx.html'
 
 function App() {
   const [query, setQuery] = useState(''); // User input query
